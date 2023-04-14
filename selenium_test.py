@@ -31,8 +31,9 @@ class LoginForm(unittest.TestCase):
 
         self.driver = webdriver.Remote(
             desired_capabilities=caps,
-            # command_executor="http://%s:%s@hub.crossbrowsertesting.com:80/wd/hub"%(self.username,self.authkey)
-            command_executor="http://hub.crossbrowsertesting.com:80/wd/hub"
+            command_executor="http://%s:%s@hub.crossbrowsertesting.com:80/wd/hub" % (
+                self.username, self.authkey)
+            # command_executor="http://hub.crossbrowsertesting.com:80/wd/hub"
         )
 
         self.driver.implicitly_wait(20)
