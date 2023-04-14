@@ -54,6 +54,7 @@ class LoginForm(unittest.TestCase):
             self.assertEqual("Welcome tester@crossbrowsertesting.com", welcomeText)
 
             print("Taking snapshot")
+            print("Taking snapshot")
             snapshot_hash = self.api_session.post('https://crossbrowsertesting.com/api/v3/selenium/' + self.driver.session_id + '/snapshots').json()['hash']
 
             self.test_result = 'pass'
