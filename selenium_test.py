@@ -28,7 +28,8 @@ class LoginForm(unittest.TestCase):
         caps['screenResolution'] = '1366x768'
         caps['username'] = self.username
         caps['password'] = self.authkey
-
+        print(self.username)
+        print(self.authkey)
         self.driver = webdriver.Remote(
             desired_capabilities=caps,
             command_executor="http://%s:%s@hub.crossbrowsertesting.com:80/wd/hub" % (
