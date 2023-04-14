@@ -29,6 +29,7 @@ class LoginForm(unittest.TestCase):
         caps['username'] = self.username
         caps['password'] = self.authkey
         print(self.username)
+
         print(self.authkey)
         self.driver = webdriver.Remote(
             desired_capabilities=caps,
