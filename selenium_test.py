@@ -81,7 +81,3 @@ def tearDown(self):
     if self.test_result is not None:
         self.api_session.put('https://crossbrowsertesting.com/api/v3/selenium/' + self.driver.session_id,
                              data={'action': 'set_score', 'score': self.test_result})
-
-
-if name == 'main':
-    unittest.main()
