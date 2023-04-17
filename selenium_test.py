@@ -12,10 +12,10 @@ class LoginForm(unittest.TestCase):
 
         # Put your username and authkey below
         # You can find your authkey at crossbrowsertesting.com/account
-        # self.username = os.environ.get('CBT_USERNAME')
-        # self.authkey = os.environ.get('CBT_AUTHKEY')
-        self.username = 'liuzhendell@gmail.com'
-        self.authkey = 'ZmmSFtUqSEBvGm5mughzcvREbAau1qNz'
+        self.username = os.environ.get('CBT_USERNAME')
+        self.authkey = os.environ.get('CBT_AUTHKEY')
+        # self.username = 'liuzhendell@gmail.com'
+        # self.authkey = 'ZmmSFtUqSEBvGm5mughzcvREbAau1qNz'
 
         self.api_session = requests.Session()
         self.api_session.auth = (self.username, self.authkey)
